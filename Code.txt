@@ -1,0 +1,28 @@
+let userName = "Hugo Salino";
+let resultado = rankedResults(150, 40);
+
+function rankedResults(numA, numB){
+  let subtracao = numA - numB;
+  return subtracao;
+}
+
+function classe(resultado) {
+  if (resultado <= 10) {
+    return "Ferro";
+  } else if (resultado >= 11 && resultado <= 20) {
+    return "Bronze";
+  } else if (resultado >= 21 && resultado <= 50) {
+    return "Prata";
+  } else if (resultado >= 51 && resultado <= 80) {
+    return "Ouro";
+  } else if (resultado >= 81 && resultado <= 90) {
+    return "Diamante";
+  } else if (resultado >= 91 && resultado <= 100) {
+    return "Lendário";
+  } else if (resultado >= 101) {
+    return "Imortal";
+  }
+}
+
+let categoria = classe(resultado);
+console.log("O saldo de partidas rankeadas de " + userName + " é de " + resultado + " e está no nível de " + categoria);
